@@ -1,0 +1,9 @@
+<div class="home">
+  <h1>Welcome to the Home Page</h1>
+  <p>This is the main landing page of the application.</p>
+  <button (click)="loadData()">Load Data</button>
+  <div *ngIf="data">
+    <h2>Data Loaded:</h2>
+    <pre>{{ data | json }}</pre>
+  </div>
+</div>
